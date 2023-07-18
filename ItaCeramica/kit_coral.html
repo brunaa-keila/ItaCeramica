@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>ItaCeramica </title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+
+  <div class="navbar">
+    <h1>ItaCeramica</h1>
+  </div>
+
+  <div class="container">
+    <div class="product-details">
+
+      <div class="product-image">
+        <img src="assets/kit_coral.jfif" alt="Foto do produto">
+      </div>
+      <h1>Kit de mesa coral</h1>
+      <p>Detalhes do produto:</p>
+      <ul>
+        
+        <li>Valor: R$ 115,00</li>
+        <li>peso: 1,2 kg</li>
+      </ul>
+      <br>
+
+        <label for="quantidade">Quantidade:</label>
+        <input type="number" id="quantidade" name="quantidade" min="1" max="100" value="1">
+    <form action="enviar_comentario.php" method="POST"></form>
+        <input type="submit" value="Adicionar ao carrinho">
+        <br>
+       
+    </form>
+      <br>
+      <hr>
+
+      <br>
+      <h2>Deixe um comentário sobre o produto:</h2>
+      <form action="enviar_comentario.php" method="POST">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome">
+    
+        <label for="comentario">Comentário:</label>
+        <textarea id="comentario" name="comentario"></textarea>
+    <br>
+        <input type="submit" value="Enviar">
+      </form>
+    </div>
+  </div>
+  
+  <footer class="footer">
+    <p>Copyright © 0000-0000 itaceramica.com.br LTDA.</p>
+    <p>CNPJ n.º 00.000.000/0000-00 / Av. Sitio Porto, nº 3.003, Itabaiana/SE - CEP 0000-000 - empresa Ita Cerâmica..</p>
+  </footer>
+  
+</body>
+</html>

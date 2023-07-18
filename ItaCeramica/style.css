@@ -11,7 +11,7 @@ body {
   align-items: center;
   min-height: 100vh;
   font-family: "Arial";
-  gap: 160px;
+  gap: 60px;
   background-image: url("fundo.jfif");
   background-size: cover;
 }
@@ -38,7 +38,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   gap: 16px;
-  padding: 16px;
+  padding: 1px;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -188,8 +188,72 @@ body {
     }
 
 
+    .controls {
+      display: flex;
+      justify-content: center;
+      margin-top: 16px;
+    }
+    
+    .controls button {
+      background-color: #3760a1;
+      color: #fff;
+      border: none;
+      padding: 8px 16px;
+      margin: 0 4px;
+      cursor: pointer;
+    }
+    
+    .controls button:hover {
+      background-color: #2c3e5a;
+    }
+    
+
+    #btnScrollToTop {
+      display: none; 
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      padding: 10px;
+      background-color: #3760a1;
+      color: rgb(245, 245, 245);
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    
+
+/* Estilo personalizado para o navbar */
+.navbar-custom {
+  background-color: #3760a1; /* Defina a cor de fundo azul aqui */
+  border-bottom-width: 4px; /* Defina a espessura da borda inferior */
+  border-bottom-color: #3760a1; /* Cor da borda inferior (pode ser alterada para se adequar ao seu design) */
+}
+
+/* Estilize os links do navbar com uma cor branca */
+.navbar-custom .navbar-nav .nav-link {
+  color: #e8edf5;
+}
+
+/* Estilize os links ativos com uma cor de fundo diferente */
+.navbar-custom .navbar-nav .nav-link.active {
+  background-color: #3760a1;
+  color: #e8ebee; /* Defina a cor do texto quando o link estiver ativo */
+}
+
+.navbar-custom .navbar-nav .nav-link:hover {
+  color: rgb(26, 25, 100);
+}
 
 
+.navbar-custom .navbar-nav .btn-outline-success {
+  color: white; /* Defina a cor do texto no botão */
+  background-color: #3760a1; /* Defina a cor de fundo do botão como verde */
+  border-color: rgb(255, 255, 255); /* Defina a cor da borda do botão como verde */
+  transition: background-color 0.3s, border-color 0.3s; /* Adicione uma transição suave para a cor de fundo e borda */
+}
 
-
-
+/* Efeito hover para o botão de busca */
+.navbar-custom .navbar-nav .btn-outline-success:hover {
+  background-color: #3760a1; /* Defina a cor de fundo quando o mouse estiver sobre o botão */
+  border-color: rgb(255, 255, 255); /* Defina a cor da borda quando o mouse estiver sobre o botão */
+}
